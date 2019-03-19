@@ -1,0 +1,53 @@
+<!--pages/details/details.wxml-->
+<!-- details-swiper -->
+<view class='details-swiper'>
+  <swiper
+    indicator-dots
+    autoplay
+    circular
+    indicator-color="rgba(255, 255, 255, .6)"
+    indicator-active-color="#fff"
+    interval="3000"
+    duration="1000"
+  >
+    <block 
+      wx:for="{{productInfo.imgInfo}}"
+      wx:key="{{item}}"
+    >
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" width="355" height="150"    />
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+
+<!-- details-proIntro -->
+<view class='details-proIntro'>
+  <view class='details-proIntro-title'>{{productInfo.title}}</view>
+  <view class='details-proIntro-discription'>{{productInfo.discription}}</view>
+  <view class='details-proIntro-price'>
+    <text class='new-price'>￥{{productInfo.isBase ? productInfo.newPrice +"起" : productInfo.newPrice +""}}</text>
+    <text class='old-price'>￥{{productInfo.isBase ? productInfo.oldPrice +"起" : productInfo.oldPrice +""}}</text>
+  </view>
+</view>
+
+<!-- details-tabbar -->
+<view class='details-tabbar'>
+  <view class='details-tabbar-wrap'>
+    <view class='details-tabbar-cart' catchtap='handleToCart'>
+      <image src='/assert/icon/cart.png'></image>
+      <view class='cart-badge' wx:if='{{productTotal}}'>{{productTotal}}</view>
+    </view>
+    <view 
+      class='details-tabbar-addCart' 
+      data-id='{{productInfo.id}}'
+      data-title='{{productInfo.title}}'
+      data-price='{{productInfo.newPrice}}'
+      data-img='{{productInfo.imgInfo[0]}}'
+      catchtap='handleAddToCart'
+    >
+        加入购物车
+      </view>
+    <view class='details-tabbar-buy'>立即购买</view>
+  </view>
+</view>

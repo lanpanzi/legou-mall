@@ -1,0 +1,82 @@
+<!--pages/search/search.wxml-->
+<!-- search-head -->
+<view class='search-head'>
+  <view class='search-head_left'>
+    <icon type='search' size="14" />
+    <input 
+      value='{{inputValue}}' 
+      bindinput='handleKeyInput' 
+      placeholder='搜索商品' 
+      placeholder-style='color: #b5b5b5' 
+    />
+    <icon 
+      wx:if='{{inputValue}}'
+      catchtap='handleClearInputValue' 
+      type='clear' 
+      size='14' 
+    />
+  </view>
+  <view class='search-head_right'>
+    <text catchtap='handleSearch'>搜索</text>
+  </view>
+</view>
+
+<!-- search-wrap -->
+<view class='search-wrap'>
+  <view class='search-promotion'>
+    <view class='search-promotion-title'>热门搜索</view>
+    <view class='search-promotion-list'>                                                         
+      <view class='list-pic'>
+        <image src='https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/c2e61835857f179c33f1002ae107c6f9.jpg?w=1080&h=300&bg=C7CBDD'></image>
+      </view>
+      <view class='list-wrap'>
+        <block
+          wx:for='{{promotionList}}'
+          wx:key='{{item.id}}'
+        >
+          <text 
+            class='list-wrap-item'
+            catchtap='handleInputValue'
+            data-name='{{item.name}}'  
+          >{{item.name}}</text>
+        </block>
+      </view>
+    </view>
+  </view>
+  <view class='search-category'>
+    <view class='search-category-title'>常用分类</view>
+    <view class='search-category-list'>
+      <block 
+        wx:for='{{categoryList}}'
+        wx:key='{{item.id}}'
+      >
+        <text 
+          class='list-item' 
+          catchtap='handleInputValue'
+          data-name='{{item.name}}'
+        >{{item.name}}</text>
+      </block>
+    </view>
+  </view>
+  <view class='search-history' wx:if='{{localSearch.length}}'>
+    <view class='search-history-title'>搜索历史</view>
+    <view class='search-history-content'>
+      <view 
+        class='search-history-item'
+        wx:for='{{localSearch}}'
+        wx:key='{{item.keyword}}'
+        catchtap='handleInputValue'
+        data-name='{{item.keyword}}'
+      >
+        {{item.keyword}}
+      </view>
+      <view 
+        class='search-history-clear'
+        catchtap='handleClearLocalSearch'
+      >
+        清空搜索记录
+      </view>
+    </view>
+  </view>
+</view>
+{{productInfo}}

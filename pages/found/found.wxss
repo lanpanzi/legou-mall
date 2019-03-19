@@ -1,0 +1,66 @@
+/* pages/found/found.wxss */
+page {
+  background-color: #ebebeb;
+}
+
+/* found-nav */
+.found-nav {
+  background-color: #fff;
+}
+.found-nav-wrap {
+  padding-top: 37.44rpx;
+  padding-bottom: 23.4rpx;
+  display: flex;
+  justify-content: space-around;
+}
+.found-nav-item {
+  width: 33%;
+  min-height: 117rpx;
+  border-right: 1px solid #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.found-nav-item image {
+  width: 64rpx;
+  height: 64rpx;
+}
+.found-nav-item text {
+  padding-top: 37.44rpx;
+  color: #8b8b8b;
+  font-size: 14px;
+}
+
+/* found-content */
+.found-content-wrap {
+  padding: 18.72rpx;
+}
+.found-content-item {
+  background-color: #fff;
+  border-radius: 18.72rpx;
+  margin-bottom: 18.72rpx;
+}
+.found-content-item image {
+  width: 100%;
+  height: 394rpx;
+  border-top-left-radius: 18.72rpx;
+  border-top-right-radius: 18.72rpx; 
+}
+.found-content-item .content-item-toast {
+  padding: 37.44rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.found-content-item .content-item-toast .toast-tag {
+  font-size: 12px;
+  color: #fff;
+  padding: 4.68rpx 18.72rpx;
+  background-color: #ff6801;
+  border-radius: 9.36rpx;
+  margin-right: 37.44rpx;
+}
+.found-content-item .content-item-toast .toast-title {
+  color: #353535;
+}

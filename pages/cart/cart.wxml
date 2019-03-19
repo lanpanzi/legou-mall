@@ -1,0 +1,44 @@
+<!--pages/cart/cart.wxml-->
+<!-- cart-full -->
+<view class='cart-full' wx:if="{{productInfo.length !== 0}}">
+  <view class="cart-full-wrap">
+    <view 
+      class='cart-full-item' 
+      wx:for="{{productInfo}}" 
+      wx:key="{{item.id}}"
+    >
+      <view class='item-wrap'>
+        <checkbox checked='{{item.checked}}' data-id='{{item.id}}'  catchtap="handleChecked" />
+        <image src="{{item.img}}"></image>
+        <text class='title'>{{item.title}}</text>
+        <view class='subtotal'>
+          <text>{{item.count}} x </text>{{item.price}}元</view>
+      </view>
+    </view>
+  </view>
+
+  <view class='cart-full-tabbar'>
+    <view class='cart-full-tabbar-wrap'>
+      <view class='wrap-left'>
+            <checkbox checked='{{allChecked}}' catchtap="handleAllChecked" /> 全选
+        <view>合计：
+          <text>{{selectedPrice}}元</text>
+        </view>
+      </view>
+      <view class='wrap-right'>结算（{{selectedTotal}}）</view>
+    </view>
+  </view>
+</view>
+
+<!-- cart-empty -->
+<view class='cart-empty' wx:else>
+  <view class='cart-empty-wrap'>
+    <view class='cart-empty-icon'>
+      <image src='/assert/cart/cart.png'></image>
+    </view>
+    <view class='cart-empty-text'>购物车是空的</view>
+    <view class='cart-empty-btn' catchtap='handleToHome'>
+      到乐购商城逛逛
+    </view>
+  </view>
+</view>

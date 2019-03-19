@@ -1,0 +1,31 @@
+<!--pages/category/category.wxml-->
+<!-- category-list -->
+<view class='category-list scroll'>
+  <view 
+    wx:for='{{categoryList}}'
+    class='{{item.id === selectedID ? "category-list-item active" : "category-list-item"}}'
+    wx:key='{{item.id}}'
+    data-id='{{item.id}}'
+    catchtap='handleChangeCategoryItem'
+  >
+    {{item.tab}}
+  </view>
+</view>
+
+<!-- category-content -->
+<view class='category-content scroll'>
+  <view
+    class='category-content-item' 
+    wx:for='{{itemContent}}'
+    wx:key='{{item.id}}'
+  >
+    <view class='item-img'>
+      <image src='{{item.img}}'></image>
+    </view>
+    <view class='item-name'>{{item.name}}</view>
+  </view>
+</view>
+
+
+
+

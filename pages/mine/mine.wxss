@@ -1,0 +1,73 @@
+/* pages/mine/mine.wxss */
+page {
+  background-color: #ebebeb;
+}
+
+/* mine-division */
+.mine-division {
+  height: 18.72rpx;
+  background-color: rgb(235, 235, 235);
+}
+
+/* mine-info */
+.mine-info {
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 18.72rpx 0;
+}
+.mine-info-avatar {
+  height: 144rpx;
+}
+.mine-info-avatar {
+  width: 192rpx;
+  display: flex;
+  justify-content: center;
+}
+.mine-info-name {
+  flex: 1;
+}
+.mine-info-avatar image {
+  width: 144rpx;
+  height: 100%;
+}
+.mine-info-QRCode {
+  display: flex;
+  align-items: center;
+  padding-right: 64rpx;
+}
+.mine-info-QRCode image {
+  width: 48rpx;
+  height: 48rpx;
+}
+
+/* mine-recommend */
+.mine-recommend,
+.mine-content {
+  background-color: #fff;
+}
+.mine-recommend-wrap {
+  padding: 32rpx 18.72rpx;
+  display: flex;
+  align-items: center;
+}
+.mine-recommend-wrap image,
+.mine-content-item image {
+  width: 64rpx;
+  height: 64rpx;
+  margin-right: 18.72rpx;
+}
+
+/* mine-content */
+.mine-content-wrap {
+  padding: 0 18.72rpx;
+}
+.mine-content-item {
+  border-bottom: 1px solid #e5e5e5;
+  padding: 32rpx 0;
+  display: flex;
+  align-items: center;
+}
+.mine-content-item:last-child {
+  border-bottom: none;
+}

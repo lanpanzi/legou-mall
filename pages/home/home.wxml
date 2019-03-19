@@ -1,0 +1,146 @@
+<!--pages/home/home.wxml-->
+<!-- home-authorization -->
+<!-- <view class='home-authorization'>
+  <icon type="info" />
+  <text>请授权头像等信息，以便为您提供更好的服务</text>
+  <image src='../../assert/icon/right.png'></image>
+</view> -->
+
+<!-- home-search -->
+<view class='home-search'>
+  <navigator class='home-search_content' url='/pages/search/search'>
+    <icon type='search' size="14" />
+    <text>搜索物品</text>
+  </navigator>
+</view>
+
+<!-- home-swiper -->
+<view class='home-swiper'>
+  <swiper
+    indicator-dots
+    indicator-color="rgba(255, 255, 255, .6)"
+    indicator-active-color="#fff"
+    autoplay
+    interval="3000"
+    duration="1000"
+    circular
+  >
+    <block 
+      wx:for="{{imgUrls}}"
+      wx:key="{{item.id}}"
+    >
+      <swiper-item>
+        <image src="{{item.img}}" class="slide-image" />
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+
+<!-- home-nav -->
+<view class='home-nav'>
+  <block 
+    wx:for="{{navs}}"
+    wx:key="{{item.id}}"
+  >
+    <view class='home-nav_item'>
+      <view class='nav-item_icon'>
+        <image src='{{item.img}}'></image>
+      </view>
+      <view class='nav-item_title'>{{item.name}}</view>
+    </view>
+  </block>
+</view>
+
+<!-- home-division -->
+<view class='home-division'></view>
+
+<!-- home-hotSale -->
+<view class='home-hotSale'>
+  <view class='hotSale-left'>
+    <image src='http:////i8.mifile.cn/v1/a1/ce3cf994-bf58-fa00-5962-b8c09427faf4!358x508.webp'></image>
+  </view>
+  <view class='hotSale-right'>
+    <view class='hotSale-right_top'>
+      <image src='http://i8.mifile.cn/v1/a1/4be6beae-c18c-799c-19bd-30c620814969!358x252.webp'></image>
+    </view>
+    <view class='hotSale-right_bottom'>
+      <image src='http://i8.mifile.cn/v1/a1/6e76a1b3-532a-b861-f959-c5b0c05c42fd!358x252.webp'></image>
+    </view>
+  </view>
+</view>
+
+<!-- home-division -->
+<view class='home-division'></view>
+
+<!-- home-banner -->
+<view class='home-banner'>
+  <image src='http://i8.mifile.cn/v1/a1/a510634a-1898-c67e-5b2b-b1904250074d!720x280.webp'></image>
+</view>
+
+<!-- home-division -->
+<view class='home-division'></view>
+
+<!-- home-daily-selection -->
+<view class='home-daily-selection'>
+  <image src='http://i8.mifile.cn/v1/a1/5df15531-f43d-4255-7e2b-006c7e19ef12!720x440.webp'></image>
+</view>
+
+<!-- home-phone-list -->
+<view class='home-phone-list'>
+  <block
+    wx:for="{{dailySelectionList}}"
+    wx:key="{{item.id}}"
+  >
+    <navigator class='list-item' url='/pages/details/details?id={{item.id}}'>
+      <view class='item-img'>
+        <image src='{{item.img}}'></image>
+      </view>
+      <view class='item-ifo'>
+        <view class='name'>{{item.title}}</view>
+        <view class='brief'>{{item.discription}}</view>
+        <view class='price'>
+          <text class='new'>￥{{item.isBase ? item.new_price +"起" : item.new_price +""}}</text>
+          <text class='old'>￥{{item.isBase ? item.old_price +"起" : item.old_price +""}}</text>
+        </view>
+      </view>
+    </navigator>
+  </block>
+</view>
+
+<!-- home-division -->
+<view class='home-division'></view>
+
+<!-- home-banner -->
+<view class='home-banner'>
+  <image src='http://i8.mifile.cn/v1/a1/54ebad2d-ed5c-f73e-b328-a5b107e9e656!720x280.webp'></image>
+</view>
+
+<!-- home-division -->
+<view class='home-division'></view>
+
+<!-- home-tv -->
+<view class='home-daily-selection'>
+  <image src='http://i8.mifile.cn/v1/a1/6e3711d2-75e0-7ad5-aceb-c81d705f933c!720x440.webp'></image>
+</view>
+
+<!-- home-tv-list -->
+<view class='home-phone-list'>
+  <block
+    wx:for="{{dailySelectionList}}"
+    wx:key="{{item.id}}"
+  >
+    <navigator class='list-item' url='/pages/details/details?id={{item.id}}'>
+      <view class='item-img'>
+        <image src='{{item.img}}'></image>
+      </view>
+      <view class='item-ifo'>
+        <view class='name'>{{item.title}}</view>
+        <view class='brief'>{{item.discription}}</view>
+        <view class='price'>
+          <text class='new'>￥{{item.isBase ? item.new_price +"起" : item.new_price +""}}</text>
+          <text class='old'>￥{{item.isBase ? item.old_price +"起" : item.old_price +""}}</text>
+        </view>
+      </view>
+    </navigator>
+  </block>
+</view>

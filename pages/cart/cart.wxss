@@ -1,0 +1,120 @@
+/* pages/cart/cart.wxss */
+page {
+  background-color: #ebebeb;
+}
+
+/* cart-empty */
+.cart-empty-wrap {
+  padding-top: 74.88rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cart-empty-icon {
+  width: 192rpx;
+  height: 192rpx;
+  background-color: #d4d4d4;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cart-empty-icon image {
+  width: 160rpx;
+  height: 160rpx;
+}
+.cart-empty-text {
+  line-height: 160rpx;
+}
+.cart-empty-btn {
+  padding: 16rpx 176rpx;
+  color: #fff;
+  background-color: #ff6801;
+  border-radius: 18.72rpx;
+}
+
+/* cart-full */
+.cart-full {
+  padding-top: 37.44rpx;
+}
+.cart-full-item {
+  background-color: #fff;
+  padding: 0 18.72rpx;
+}
+.cart-full-item .item-wrap {
+  padding: 18.72rpx 0;
+  border-bottom: 1px solid #e5e5e5;
+  display: flex;
+  align-items: center;
+}
+.cart-full-item:last-child .item-wrap {
+  border-bottom: none;
+}
+.item-wrap image {
+  width: 80rpx;
+  height: 96rpx;
+  margin-left: 18.72rpx;
+}
+.item-wrap .title {
+  flex: 1;
+  padding-left: 18.72rpx;
+}
+.item-wrap .subtotal {
+  width: 30%;
+  color: #e17c50;
+}
+.item-wrap .subtotal text {
+  font-size: 14px;
+  color: #9b9b9b;
+}
+checkbox .wx-checkbox-input{
+  border-radius: 50%;
+  height: 40rpx;
+  width: 40rpx;
+  margin-top: -4rpx;
+  border: 1rpx solid #e3e3e3;
+}
+checkbox .wx-checkbox-input.wx-checkbox-input-checked::before {
+  border-radius: 50%;
+  width: 40rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  text-align: center;
+  font-size: 30rpx;
+  color: #fff;
+  background: transparent;
+  transform: translate(-50%, -50%) scale(1);
+  background-color: orange;
+  border: 1rpx solid orange;
+}
+.cart-full-tabbar {
+  width: 100%;
+  background-color: #fff;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+}
+.cart-full-tabbar-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.cart-full-tabbar-wrap .wrap-left {
+  padding: 37.44rpx;
+  flex: 1;
+  display: flex;
+}
+.cart-full-tabbar-wrap .wrap-left view {
+  flex: 1;
+  text-align: right;
+}
+.cart-full-tabbar-wrap .wrap-left text {
+  color: #e17c50;
+}
+.cart-full-tabbar-wrap .wrap-right {
+  padding: 37.44rpx 0;
+  text-align: center;
+  width: 35%;
+  background-color: #cccccc;
+  color: #fff;
+}

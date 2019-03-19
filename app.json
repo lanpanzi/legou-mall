@@ -1,0 +1,54 @@
+{
+  "pages":[
+    "pages/home/home",
+    "pages/category/category",
+    "pages/found/found",
+    "pages/cart/cart",
+    "pages/mine/mine",
+    "pages/search/search",
+    "pages/details/details",
+    "pages/productsList/productsList"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#f9f9f9",
+    "navigationBarTitleText": "乐购商城",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "selectedColor": "#FF6801",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "assert/icon/home.png",
+        "selectedIconPath": "assert/icon/home-selected.png"
+      },
+      {
+        "pagePath": "pages/category/category",
+        "text": "分类",
+        "iconPath": "assert/icon/category.png",
+        "selectedIconPath": "assert/icon/category-selected.png"
+      },
+      {
+        "pagePath": "pages/found/found",
+        "text": "发现",
+        "iconPath": "assert/icon/found.png",
+        "selectedIconPath": "assert/icon/found-selected.png"
+      },
+      {
+        "pagePath": "pages/cart/cart",
+        "text": "购物车",
+        "iconPath": "assert/icon/cart.png",
+        "selectedIconPath": "assert/icon/cart-selected.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "assert/icon/mine.png",
+        "selectedIconPath": "assert/icon/mine-selected.png"
+      }
+    ]
+  }
+}

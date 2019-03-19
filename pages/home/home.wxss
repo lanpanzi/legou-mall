@@ -1,0 +1,162 @@
+/* pages/home/home.wxss */
+/* home-authorization */
+.home-authorization {
+  background-color: rgb(245, 245, 245);
+  font-size: 28.08rpx;
+  padding: 28.08rpx 31.78rpx;
+  display: flex;
+  align-items: center;
+}
+.home-authorization text {
+  padding-left: 11.7rpx;
+  color: #999;
+}
+.home-authorization image {
+  width: 32.76rpx;
+  height: 32.76rpx;
+}
+
+/* home-search */
+.home-search {
+  padding: 11.7rpx 18.72rpx;
+  background-color: #FF6801; 
+}
+.home-search .home-search_content {
+  height: 56.16rpx;
+  background-color: #fff;
+  border-radius: 23.4rpx;
+  font-size: 28.08rpx;
+  color: #999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home-search .home-search_content text {
+  padding-left: 7.02rpx;
+}
+
+/* home-swiper */
+.home-swiper swiper {
+  height: 351rpx;
+}
+.home-swiper image {
+  width: 100%;
+  height: 100%;
+}
+
+/* home-nav */
+.home-nav {
+  padding: 23.4rpx 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.home-nav .home-nav_item {
+  margin-bottom: 23.4rpx;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+} 
+.home-nav .nav-item_icon {
+  width: 58.5rpx;
+  height: 58.5rpx;
+}
+.home-nav .nav-item_icon image {
+  width: 100%;
+  height: 100%;
+}
+.home-nav .nav-item_title {
+  font-size: 28.08rpx;
+  margin-top: 7.02rpx;
+  color: #999;
+}
+
+/* home-division */
+.home-division {
+  height: 14.04rpx;
+  background-color: rgb(235, 235, 235);
+}
+
+/* home-hotSale */
+.home-hotSale {
+  display: flex;
+}
+.home-hotSale .hotSale-left {
+  height: 477.36rpx;
+  flex: 1;
+  margin-right: 1%;
+}
+.home-hotSale .hotSale-left image {
+  width: 100%;
+  height: 100%;
+}
+.home-hotSale .hotSale-right {
+  width: 49.5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.home-hotSale .hotSale-right .hotSale-right_top,
+.home-hotSale .hotSale-right .hotSale-right_bottom {
+  width: 100%;
+  height: 49%;
+}
+.home-hotSale .hotSale-right image {
+  width: 100%;
+  height: 100%;
+}
+
+/* home-banner */
+.home-banner {
+  height: 304.2rpx;
+}
+.home-banner image {
+  width: 100%;
+  height: 304.2rpx;
+}
+
+/* home-daily-selection */
+.home-daily-selection image {
+  width: 100%;
+  height: 444.6rpx;
+} 
+
+/* home-phone-list */
+.home-phone-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.home-phone-list .list-item {
+  width: 49.6%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.list-item .item-img image {
+  width: 100%;
+  height: 269.1rpx;
+}
+.list-item .item-ifo {
+  padding: 23.4rpx 32.76rpx;
+  font-size: 32.76rpx;
+  color: rgba(0, 0, 0, .85);
+}
+.list-item .item-ifo .brief {
+  font-size: 28.08rpx;
+  color: rgba(0, 0, 0, .54);
+}
+.list-item .item-ifo .price {
+  color: #ea625b;
+}
+.list-item .item-ifo .price .old {
+  font-size: 28.08rpx;
+  text-decoration: line-through;
+  color: rgba(0, 0, 0, .54);
+  margin-left: 11.7rpx;
+}
+
+
+

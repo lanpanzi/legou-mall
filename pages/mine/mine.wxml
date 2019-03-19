@@ -1,0 +1,56 @@
+<!--pages/mine/mine.wxml-->
+<!-- mine-division -->
+<view class='mine-division'></view>
+
+<!-- mine-info -->
+<view class='mine-info'>
+  <view class='mine-info-avatar'>
+    <image src='{{userAvatarUrl}}'></image>
+  </view>
+  <view class='mine-info-name'>{{username}}</view>
+  <view class='mine-info-QRCode'>
+    <image src='/assert/mine/QRCode.png'></image>
+  </view>
+</view>
+
+<!-- mine-division -->
+<view class='mine-division'></view>
+
+<!-- mine-recommend -->
+<view class='mine-recommend'>
+  <view class='mine-recommend-wrap'>
+    <image src='/assert/mine/recommend.png'></image>
+    <text>精品推荐</text>
+  </view>
+</view>
+
+<!-- mine-division -->
+<view class='mine-division'></view>
+
+<view class='mine-content'>
+  <view class='mine-content-wrap'>
+    <view class='mine-content-item'>
+      <image src='/assert/mine/order.png'></image>
+      <text>我的订单</text>
+    </view>
+    <view class='mine-content-item'>
+      <image src='/assert/mine/vip.png'></image>
+      <text>会员中心</text>
+    </view>
+    <view class='mine-content-item'>
+      <image src='/assert/mine/coupon.png'></image>
+      <text>我的优惠券</text>
+    </view>
+  </view>
+</view>
+
+<!-- mine-division -->
+<view class='mine-division'></view>
+
+<!-- mine-recommend -->
+<view class='mine-recommend mine-settings'>
+  <view class='mine-recommend-wrap'>
+    <image src='/assert/mine/settings.png'></image>
+    <text>设置</text>
+  </view>
+</view>

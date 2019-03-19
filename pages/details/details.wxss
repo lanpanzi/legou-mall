@@ -1,0 +1,94 @@
+/* pages/details/details.wxss */
+/* details-swiper */
+.details-swiper {
+  width: 100%;
+  height: 810.8rpx;
+}
+.details-swiper swiper {
+  height: 100%;
+}
+.details-swiper swiper image {
+  width: 100%;
+  height: 100%;
+}
+
+/* details-proIntro */
+.details-proIntro {
+  padding: 28.08rpx;
+}
+.details-proIntro .details-proIntro-title {
+  font-size: 32.76rpx;
+}
+.details-proIntro .details-proIntro-discription {
+  font-size: 28.08rpx;
+  color: #999;
+  line-height: 56.16rpx;
+}
+.details-proIntro .details-proIntro-price {
+  line-height: 84.24rpx;
+}
+.details-proIntro .details-proIntro-price .new-price {
+  color: #d15b2b;
+}
+.details-proIntro .details-proIntro-price .old-price {
+  color: #999;
+  font-size: 28.08rpx;
+  text-decoration: line-through;
+  margin-left: 23.4rpx;
+}
+
+/* details-tabbar */
+.details-tabbar {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.details-tabbar-wrap {
+  height: 114.05rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+.details-tabbar-cart {
+  border-top: 1px solid rgb(213, 213, 213);
+  box-sizing: border-box;
+  width: 20%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.details-tabbar-cart image {
+  width: 93.6rpx;
+  height: 93.6rpx;                           
+}
+.details-tabbar-cart .cart-badge {
+  font-size: 14px;
+  background-color: rgb(254, 73, 0);
+  min-width: 40rpx;
+  min-height: 40rpx;
+  text-align: center;
+  line-height: 40rpx;
+  border-radius: 50%;
+  position: absolute;
+  top: 20rpx;
+  right: 34rpx;
+}
+.details-tabbar-addCart,
+.details-tabbar-buy {
+  text-align: center;
+  line-height: 114.05rpx;
+}
+.details-tabbar-addCart {
+  width: 40%;
+  height: 100%;
+  background-color: #ff6801;
+}
+.details-tabbar-buy {
+  flex: 1;
+  height: 100%;
+  background-color: #ea5e3a;
+}

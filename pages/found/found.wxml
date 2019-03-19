@@ -1,0 +1,31 @@
+<!--pages/found/found.wxml-->
+<!-- found-nav -->
+<view class='found-nav'>
+  <view class='found-nav-wrap'>
+    <view 
+      class='found-nav-item'
+      wx:for='{{foundNav}}'
+      wx:key='{{item.id}}'
+    >
+      <image src='{{item.img}}'></image>
+      <text>{{item.name}}</text>
+    </view>
+  </view>
+</view>
+
+<!-- found-content -->
+<view class='found-content'>
+  <view class='found-content-wrap'>
+    <view 
+      class='found-content-item'
+      wx:for='{{contentList}}'
+      wx:key='{{item.id}}'
+    >
+      <image src='{{item.img}}'></image>
+      <view class='content-item-toast'>
+        <view class='toast-tag'>{{item.tag}}</view>
+        <view class='toast-title'>{{item.title}}</view>
+      </view>
+    </view>
+  </view>
+</view>
